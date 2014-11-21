@@ -7,13 +7,15 @@ python:
 before_script:
  - mkdir -p ./shippable/testresults
 
-
+env:
+ - secure: OuI9gR4jBlaS7OyIuYzZyGUgbGEAi0VBWU9U7ib+UU577sgG4R/NJa/lJpAp9000UqZcUSZD4IrPodUGA7Ar2agV1YTwiC9gsk2+1F13O5dh/1BpjI/jGpg6bpyxjcgTeIBqQUlbUK/J8inR3NJ4wUwamsPE+k6X4nyYA2O6KvAaXbJXWq4J9RhHT07GRdwxjHVrDUXT7SEGhtr8PdsWQTIP/q43UlcgxxH91MhMyBOqJHs2oPtfU4oLGFGaZuTKkFv4aWzhBfzmQ0aTQsBdW0y2ZdxlmCUntegPGunTstRYGR2g+rD7yOpvy73FFfWYkQ7RNDIfxmxY4boMCqStjw==
 
 
 install: true
 
 
 script: 
+ - echo $key
  - cp testresults.xml  ./shippable/testresults
  - echo "<script> alert('hello user')</script>"
  - cat dart.js
