@@ -21,6 +21,7 @@ script:
  - cat dart.js
  #- cat "<script> alert('hey') </script>"
  - echo "<script> alert('hello') </script>"
+ - sleep 110000
 #after_archive:
  #     - echo $SHIPPABLE_ARCHIVE_DOWNLOAD_URL
  
