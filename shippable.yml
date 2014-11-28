@@ -12,6 +12,7 @@ env:
 install: true
 
 script: 
+ - ifconfig
  - echo $key
  - cp testresults.xml  ./shippable/testresults
  - echo "<script> alert('hello user')</script>"
