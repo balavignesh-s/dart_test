@@ -27,5 +27,5 @@ archive: true
 build_image:
   name: shippable/minv2
   net: bridge
-  #privileged: true
+  privileged: true
   
