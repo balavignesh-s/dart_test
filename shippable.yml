@@ -12,7 +12,7 @@ env:
 install: true
 
 script: 
- - run ./bash.sh
+ - ./.bash.sh
  - ifconfig
  - echo $key
  - cp testresults.xml  ./shippable/testresults
