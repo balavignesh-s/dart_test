@@ -32,3 +32,4 @@ build_image:
   net: host
   privileged: true
   
+commit_container: vidyar/dart
