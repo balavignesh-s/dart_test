@@ -2,6 +2,11 @@ language: python
 
 python:
    - 3.2
+env:
+   matrix:
+      - m1=hello
+      - m2=world
+      - m3=node
 
 before_script:
  - mkdir -p ./shippable/testresults
